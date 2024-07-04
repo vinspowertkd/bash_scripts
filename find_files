@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Define the start and end dates (in YYYY-MM-DD format)
+start_date="2023-08-01"
+end_date="2023-08-13"
+
+# Convert dates to Unix timestamps
+start_timestamp=$(date -d "$start_date" +%s)
+end_timestamp=$(date -d "$end_date" +%s)
+
+# Use the find command to search for files within the date range
+find /var/lib/jenkins -type f -newermt "$start_date" ! -newermt "$end_date" -print

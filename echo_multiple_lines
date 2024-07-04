@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "
+########Script Starting###########
+######Print multiple lines########
+"
+
+# strong quotes
+echo 'my \ 
+name \
+is \
+Vinod \
+'
+echo "my \
+name \
+is \
+Vinod \
+"
+
+echo -e "This is Vinod \t Lucky \t testname"
+echo -e "This is Vinod \v Lucky \v testname"
+echo -e "This is Vinod \n Lucky \n testname"

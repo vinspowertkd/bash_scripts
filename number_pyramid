@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bashhttps://ubuntu.com/esm
 for ((i=1;i<=$last_no;i++))
 do
 for ((j=1;j<=i;j++))
