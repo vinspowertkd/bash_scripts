@@ -1,0 +1,5 @@
+#!/bin/bash
+backup_dir="/home/vinod/apt_log_backup"
+source_dir="var/log/apt"
+timestamp=$(date +"%Y%m%d%H%M%S")
+tar -czf "$backup_dir/backup_$timestamp.tar.gz" -C /  "$source_dir"
